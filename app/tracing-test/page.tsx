@@ -27,7 +27,7 @@ export default function TracingTestPage() {
       >
         {loading ? "Loading..." : "Fetch Data"}
       </button>
-      {data && (
+      {data !== null && (
         <pre className="max-w-lg overflow-auto rounded bg-zinc-100 p-4 dark:bg-zinc-800">
           {JSON.stringify(data, null, 2)}
         </pre>
